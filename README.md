@@ -1,11 +1,11 @@
 # Roshan Gowda RM - Portfolio Website
 
-A modern, dark-themed portfolio website built with HTML, CSS, JavaScript, XML/XSLT, PHP, and MySQL. Features 3D interactions, glassmorphism effects, smooth animations, and a complete backend for contact form management.
+A modern, responsive portfolio website featuring a dark theme with light mode toggle. Built with HTML, CSS, and JavaScript. Showcases projects, skills, education, and achievements with smooth animations, glassmorphism effects, and interactive 3D elements.
 
 ## 🌟 Live Demo
 
-- **Frontend (GitHub Pages)**: [Coming Soon]
-- **Full Stack (Local)**: Use XAMPP/MAMP/Laragon to run locally
+- **Portfolio Website**: [View Live](https://roshangowdar.github.io/portfolio) (GitHub Pages)
+- **Local Development**: Simply open `index.html` in a browser or use a local server
 
 ## 📋 Table of Contents
 
@@ -13,12 +13,10 @@ A modern, dark-themed portfolio website built with HTML, CSS, JavaScript, XML/XS
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Installation & Setup](#installation--setup)
-- [Running Locally with XAMPP](#running-locally-with-xampp)
 - [GitHub Pages Deployment](#github-pages-deployment)
-- [Rubric Mapping](#rubric-mapping)
-- [Security Notes](#security-notes)
-- [Sample Commit Messages](#sample-commit-messages)
-- [Screenshots](#screenshots)
+- [Key Features](#key-features)
+- [Recent Updates](#recent-updates)
+- [Features Checklist](#features-checklist)
 
 ## ✨ Features
 
@@ -32,196 +30,120 @@ A modern, dark-themed portfolio website built with HTML, CSS, JavaScript, XML/XS
 - ⭐ **Floating Particles** for depth
 
 ### Sections
-- 🏠 **Hero Section** - Interactive 3D card with code snippet
+- 🏠 **Hero Section** - Interactive 3D card with code snippet and resume download
 - 👤 **About** - Profile with bio and photo
-- 🛠️ **Skills** - Interactive filtering with animated progress bars
-- 🎓 **Education** - Responsive table implementation
-- 💼 **Projects** - XML/XSLT transformed project cards with filtering
+- 🛠️ **Skills** - Interactive filtering with animated progress bars (no percentage display)
+- 🎓 **Education** - Responsive table with academic qualifications
+- 💼 **Projects** - Dynamic project cards with hover effects showing Live/Repo buttons
+  - **Plant Doctor** - AI-powered plant disease diagnosis app
+  - **Ophelia AI Marketplace** - AI marketplace for artisans
+  - And more...
 - 🏆 **Achievements** - Accomplishments showcase
-- 📜 **Certifications** - Professional certifications
-- 📧 **Contact Form** - Client & server-side validation with MySQL storage
+- 📜 **Certifications** - Professional certifications (AWS, AI/ML, Full Stack, Docker)
+- 📧 **Contact Form** - Contact form with validation
 - 🔗 **Social Links** - GitHub, LinkedIn, Instagram
 
 ### Technical Features
-- ✅ **Client-Side Validation** with real-time feedback
-- 🔐 **USN Validation** with configurable regex pattern
-- 📊 **Admin Dashboard** with sorting/filtering capabilities
-- 🔒 **Secure Authentication** using password hashing
-- 🗄️ **MySQL Database** with prepared statements
-- 🍪 **Cookie Management** for theme and tracking
-- 🔄 **Session Management** for admin access
-- 🎯 **Associative Arrays** for database operations
+- ✅ **Dark Theme** by default with light mode toggle
+- 🎨 **Animated Particles** background effect
+- 🎯 **Project Card Hover Effects** with Live/Repo buttons
+- 📱 **Fully Responsive** design for all devices
+- ✨ **Smooth Animations** and scroll effects
+- 🎭 **Parallax Effects** with cursor tracking
+- 🍪 **Cookie Management** for theme preferences
+- 🔄 **Dynamic Content Loading** with JavaScript
 
 ## 🚀 Technologies Used
 
 ### Frontend
 - **HTML5** - Semantic markup with ARIA attributes
-- **CSS3** - Flexbox, Grid, 3D transforms, animations
-- **JavaScript ES6+** - Vanilla JS for all interactions
+- **CSS3** - Flexbox, Grid, 3D transforms, animations, custom properties
+- **JavaScript ES6+** - Vanilla JS for all interactions and dynamic content
 - **Google Fonts** - Inter & JetBrains Mono
-- **Font Awesome** - Icon library
-
-### Backend
-- **PHP 7.4+** - Server-side processing
-- **MySQL** - Database management
-- **XML** - Project data storage
-- **XSLT** - XML transformation
+- **Font Awesome 6.4.0** - Icon library
 
 ### Tools & Deployment
 - **Git** - Version control
 - **GitHub** - Repository hosting
 - **GitHub Pages** - Static file hosting
-- **XAMPP/MAMP** - Local PHP development
+- **Vercel** - Alternative deployment option
 
 ## 📁 Project Structure
 
 ```
-portfolio-roshan-gowda/
+PortfolioSite/
 ├── index.html              # Main HTML file
-├── resume.pdf             # Resume download
-├── README.md              # This file
-├── .gitignore            # Git ignore rules
+├── Roshan_Resume.pdf       # Resume download
+├── README.md               # This file
+├── .gitignore              # Git ignore rules
 │
 ├── css/
-│   ├── main.css          # Main styles
-│   └── responsive.css    # Media queries
+│   ├── main.css           # Main styles with theme variables
+│   └── responsive.css     # Media queries
 │
 ├── js/
-│   ├── main.js           # Core functionality
-│   ├── validation.js     # Form validation
-│   └── parallax.js       # Parallax effects
-│
-├── xml/
-│   └── projects.xml      # Project data
-│
-├── xslt/
-│   └── projects.xsl      # XSLT stylesheet
-│
-├── php/
-│   ├── config.example.php    # Configuration template
-│   ├── db.php                # Database connection
-│   ├── contact_process.php   # Form handler
-│   ├── login.php            # Admin login
-│   ├── dashboard.php        # Admin panel
-│   └── logout.php           # Session destroy
-│
-├── sql/
-│   └── schema.sql        # Database schema
+│   ├── main.js            # Core functionality, theme toggle, projects
+│   ├── validation.js      # Form validation
+│   └── parallax.js        # Parallax effects and particles
 │
 └── assets/
-    ├── images/          # Project & profile images
-    └── icons/           # Icon files
+    ├── images/            # Project & profile images
+    │   ├── profile.jpg
+    │   ├── project-ai-chatbot.jpg
+    │   ├── project-compressor.jpg
+    │   ├── project-netflix.jpg
+    │   ├── project-pdf-merger.jpg
+    │   ├── project-spotify.jpg
+    │   ├── project-tictactoe.jpg
+    │   ├── project-weather.jpg
+    │   └── project-wonderlust.jpg
+    └── icons/             # Icon files
 ```
 
 ## 🔧 Installation & Setup
 
 ### Prerequisites
-- **XAMPP/MAMP/Laragon** installed
-- **Web browser** (Chrome, Firefox, Safari)
+- **Web browser** (Chrome, Firefox, Safari, Edge)
 - **Git** (optional, for cloning)
+- **Local server** (optional, for development)
 
 ### Step 1: Clone or Download
 
 ```bash
 # Clone the repository
-git clone https://github.com/RoshanGowdaR/portfolio-roshan-gowda.git
+git clone https://github.com/RoshanGowdaR/PortfolioSite.git
 
 # Or download ZIP and extract
 ```
 
-### Step 2: Database Setup
+### Step 2: Run Locally
 
-1. **Start XAMPP/MAMP**
-   - Start Apache and MySQL servers
+**Option 1: Direct File Opening**
+- Simply open `index.html` in your web browser
+- All features work without a server
 
-2. **Access phpMyAdmin**
-   - Open browser: `http://localhost/phpmyadmin`
-
-3. **Import Database**
-   - Click "New" to create database
-   - Click "Import" tab
-   - Choose file: `sql/schema.sql`
-   - Click "Go"
-
-   **Alternatively, use MySQL command line:**
-   ```bash
-   mysql -u root -p < sql/schema.sql
-   ```
-
-4. **Verify Database**
-   - Database `portfolio_db` should be created
-   - Tables: `contacts`, `users`
-   - Sample admin user inserted
-
-### Step 3: PHP Configuration
-
-1. **Copy Configuration File**
-   ```bash
-   cd php
-   cp config.example.php config.php
-   ```
-
-2. **Edit config.php**
-   - Update database credentials if needed
-   - Default XAMPP: `DB_USER='root'`, `DB_PASS=''`
-   - Default MAMP: `DB_USER='root'`, `DB_PASS='root'`
-
-### Step 4: Move to Web Directory
-
-**For XAMPP:**
+**Option 2: Local Server (Recommended)**
 ```bash
-# Windows
-xcopy /E /I portfolio-roshan-gowda C:\xampp\htdocs\portfolio
+# Using Python
+python -m http.server 8000
 
-# Linux/Mac
-cp -r portfolio-roshan-gowda /opt/lampp/htdocs/portfolio
+# Using Node.js (http-server)
+npx http-server
+
+# Using PHP
+php -S localhost:8000
 ```
 
-**For MAMP:**
-```bash
-cp -r portfolio-roshan-gowda /Applications/MAMP/htdocs/portfolio
-```
+Then open: `http://localhost:8000`
 
-## 🖥️ Running Locally with XAMPP
+### Step 3: Customize (Optional)
 
-1. **Start Services**
-   - Open XAMPP Control Panel
-   - Start Apache
-   - Start MySQL
-
-2. **Access Website**
-   - Open browser: `http://localhost/portfolio`
-   - Or: `http://127.0.0.1/portfolio`
-
-3. **Test Contact Form**
-   - Fill out form on contact section
-   - Submit and check for success message
-
-4. **Access Admin Dashboard**
-   - URL: `http://localhost/portfolio/php/login.php`
-   - Username: `admin`
-   - Password: `admin123`
-   - **⚠️ CHANGE PASSWORD IMMEDIATELY!**
-
-5. **View Submissions**
-   - After login, view dashboard
-   - Sort/filter contact submissions
-   - Logout when done
+- Update resume: Replace `Roshan_Resume.pdf` with your resume
+- Update profile image: Replace `assets/images/profile.jpg`
+- Update project images: Add your project screenshots
+- Modify content: Edit `index.html` and `js/main.js`
 
 ## 🌐 GitHub Pages Deployment
-
-### What Works on GitHub Pages
-- ✅ HTML, CSS, JavaScript
-- ✅ Static content
-- ✅ Client-side validation
-- ✅ Theme toggle
-- ✅ Animations and interactions
-
-### What Doesn't Work on GitHub Pages
-- ❌ PHP backend
-- ❌ MySQL database
-- ❌ Contact form submission
-- ❌ Admin dashboard
 
 ### Deployment Steps
 
@@ -231,200 +153,93 @@ cp -r portfolio-roshan-gowda /Applications/MAMP/htdocs/portfolio
    git add .
    git commit -m "Initial commit: Portfolio website"
    git branch -M main
-   git remote add origin https://github.com/RoshanGowdaR/portfolio.git
+   git remote add origin https://github.com/RoshanGowdaR/PortfolioSite.git
    git push -u origin main
    ```
 
 2. **Enable GitHub Pages**
    - Go to repository Settings
-   - Navigate to "Pages"
+   - Navigate to "Pages" section
    - Source: Deploy from branch
    - Branch: `main` / `root`
-   - Save
+   - Folder: `/ (root)`
+   - Click Save
 
 3. **Access Website**
-   - URL: `https://RoshanGowdaR.github.io/portfolio/`
+   - URL: `https://RoshanGowdaR.github.io/PortfolioSite/`
    - Wait 2-3 minutes for deployment
+   - Your site will be live!
 
-### Alternative: Deploy PHP Backend
+### Alternative Deployment Options
 
-For full functionality including contact form, use:
-- **InfinityFree** (free PHP hosting)
-- **000webhost** (free with PHP & MySQL)
-- **Heroku** (with ClearDB MySQL add-on)
-- **DigitalOcean** or **AWS** (paid options)
+- **Vercel** - Fast deployment with automatic HTTPS
+- **Netlify** - Easy drag-and-drop deployment
+- **Cloudflare Pages** - Free hosting with CDN
+- **Firebase Hosting** - Google's hosting solution
 
-## 📊 Rubric Mapping
+## 🎨 Key Features
 
-### 1. Front-End Development
-**Files:** `index.html`, `css/main.css`, `css/responsive.css`
-- ✅ Semantic HTML5 with proper structure
-- ✅ Responsive design using Flexbox and Grid
-- ✅ Table implementation in Education section
-- ✅ CSS animations and 3D transforms
-- ✅ Glassmorphism effects
-- ✅ Media queries for mobile responsiveness
-- ✅ Accessibility with ARIA attributes
+### Projects Showcase
+- **Plant Doctor** - AI-powered plant disease diagnosis
+  - Live: [plant-doctor-mauve.vercel.app](https://plant-doctor-mauve.vercel.app)
+  - Repo: [GitHub](https://github.com/animelover636294-cyber/Plant_Doctor)
+- **Ophelia AI Marketplace** - AI-powered marketplace for local artisans with AI copilots
+  - Live: [ophelia-unbound-ai.vercel.app](https://ophelia-unbound-ai.vercel.app)
+  - Repo: [GitHub](https://github.com/RoshanGowdaR/ophelia-unbound-ai)
+- **Wonderlust** - Full-stack travel booking app
+- **AI Assistant Chatbot** - Conversational AI with NLP
+- And more...
 
-### 2. JavaScript Functionality
-**Files:** `js/main.js`, `js/validation.js`, `js/parallax.js`
-- ✅ Client-side form validation
-- ✅ USN regex validation (configurable pattern)
-- ✅ Cursor tracking and parallax effects
-- ✅ Dynamic section filtering (skills & projects)
-- ✅ Theme toggle with cookie storage
-- ✅ Smooth scrolling and animations
-- ✅ DOM manipulation and event handling
-- ✅ XSLT transformation for XML data
+### Design Highlights
+- 🌙 **Dark Theme** with animated particles background
+- 🎨 **Light Mode Toggle** with smooth transitions
+- ✨ **Glassmorphism Effects** on cards
+- 🎯 **3D Interactive Elements** with tilt effects
+- 📱 **Fully Responsive** mobile-first design
+- 🎭 **Parallax Background** with cursor tracking
+- ⚡ **Smooth Animations** throughout
 
-### 3. XML + XSLT
-**Files:** `xml/projects.xml`, `xslt/projects.xsl`
-- ✅ 8 projects stored in XML format
-- ✅ XSLT stylesheet for transformation
-- ✅ Browser-based XML transformation
-- ✅ Categorized by difficulty level
-- ✅ Styled project cards with data binding
+### Technical Highlights
+- ✅ **Pure JavaScript** - No frameworks, vanilla JS
+- ✅ **CSS Custom Properties** - Theme variables
+- ✅ **Modern ES6+** - Arrow functions, destructuring, etc.
+- ✅ **Accessibility** - ARIA labels and semantic HTML
+- ✅ **Performance** - Optimized animations and lazy loading
+- ✅ **SEO Friendly** - Proper meta tags and structure
 
-### 4. PHP + MySQL Integration
-**Files:** `php/*.php`, `sql/schema.sql`
-- ✅ Database connection with prepared statements
-- ✅ Contact form processing with sanitization
-- ✅ Session management for admin authentication
-- ✅ Cookie usage (theme preference, last contact)
-- ✅ Password hashing with `password_hash()`
-- ✅ Associative arrays with `mysqli_fetch_assoc()`
-- ✅ Dashboard with sorting and filtering
-- ✅ Secure logout functionality
+## 📝 Recent Updates
 
-### 5. GitHub Repository & Hosting
-**Files:** `.gitignore`, `README.md`
-- ✅ Complete README with instructions
-- ✅ Proper .gitignore for PHP projects
-- ✅ Clear project structure
-- ✅ Step-by-step setup guide
-- ✅ GitHub Pages deployment instructions
-- ✅ Sample commit messages provided
-
-### 6. Creativity & Design
-- ✅ Dark futuristic theme inspired by cortiz.dev
-- ✅ 3D interactive elements with tilt effects
-- ✅ Parallax scrolling and cursor tracking
-- ✅ Glassmorphism UI design
-- ✅ Smooth animations and transitions
-- ✅ Professional color scheme and typography
-
-## 🔒 Security Notes
-
-### Default Credentials
-- **Username:** `admin`
-- **Password:** `admin123`
-- **⚠️ CHANGE IMMEDIATELY!**
-
-### Changing Admin Password
-
-**Method 1: Using PHP**
-```bash
-php -r "echo password_hash('YourNewPassword', PASSWORD_DEFAULT);"
-```
-Copy the hash and update database:
-```sql
-UPDATE users SET password = 'YOUR_HASH_HERE' WHERE username = 'admin';
-```
-
-**Method 2: Using phpMyAdmin**
-- Open phpMyAdmin
-- Select `portfolio_db` database
-- Click `users` table
-- Edit admin row
-- Replace password hash
-- Save changes
-
-### Important Security Practices
-1. ✅ Never commit `php/config.php` to repository
-2. ✅ Use `.gitignore` to exclude sensitive files
-3. ✅ Change default admin password
-4. ✅ Use HTTPS in production
-5. ✅ Keep PHP and MySQL updated
-6. ✅ Validate and sanitize all inputs
-7. ✅ Use prepared statements for SQL queries
-
-## 📝 Sample Commit Messages
-
-Use these as templates for your Git commits:
-
-```bash
-# Initial Setup
-git commit -m "Initial commit: Portfolio website setup"
-git commit -m "Add database schema and sample data"
-git commit -m "Configure PHP backend with MySQL connection"
-
-# Features
-git commit -m "Add dark/light theme toggle with cookie storage"
-git commit -m "Implement 3D card tilt effect in hero section"
-git commit -m "Add contact form with client-side validation"
-git commit -m "Implement XML/XSLT transformation for projects"
-git commit -m "Create admin dashboard with sorting functionality"
-
-# Styling
-git commit -m "Add glassmorphism effects to cards"
-git commit -m "Implement responsive design for mobile devices"
-git commit -m "Add smooth scroll animations and parallax effects"
-
-# Bug Fixes
-git commit -m "Fix: Mobile menu not closing on navigation"
-git commit -m "Fix: Form validation error messages display"
-git commit -m "Fix: Database connection error handling"
-
-# Enhancements
-git commit -m "Enhance: Improve accessibility with ARIA labels"
-git commit -m "Enhance: Add skill filtering functionality"
-git commit -m "Enhance: Optimize images for faster loading"
-
-# Documentation
-git commit -m "Update README with setup instructions"
-git commit -m "Add security notes and password change guide"
-git commit -m "Document rubric mapping and feature list"
-```
-
-## 📸 Screenshots
-
-Add your screenshots in a `report-screenshots/` folder:
-- `homepage.png` - Hero section
-- `about.png` - About section
-- `skills.png` - Skills with filtering
-- `projects.png` - Projects grid
-- `contact-form.png` - Contact form
-- `dashboard.png` - Admin dashboard
-- `mobile-view.png` - Responsive design
+- ✅ Added Plant Doctor project with Live/Repo links
+- ✅ Updated project cards with hover effects
+- ✅ Changed button labels to "Live" and "Repo"
+- ✅ Implemented dark theme with animated particles
+- ✅ Removed skill percentage displays
+- ✅ Updated resume link to Roshan_Resume.pdf
+- ✅ Enhanced theme toggle functionality
+- ✅ Improved project card styling and animations
 
 ## 🎯 Features Checklist
 
 - [x] Dark theme by default
-- [x] Light/Dark theme toggle
+- [x] Light/Dark theme toggle with cookie persistence
+- [x] Animated particles background
 - [x] 3D interactive hero section
 - [x] Parallax background effects
-- [x] Floating particles
 - [x] Glassmorphism cards
 - [x] Smooth scroll animations
 - [x] Responsive navigation with hamburger menu
 - [x] Skills section with filtering
-- [x] Animated progress bars
+- [x] Animated progress bars (without percentages)
 - [x] Education table
-- [x] Projects from XML/XSLT
+- [x] Dynamic project cards with JavaScript
 - [x] Project filtering by difficulty
-- [x] Tilt effects on project cards
+- [x] Hover effects on project cards
+- [x] Live/Repo buttons on project hover
 - [x] Contact form with validation
-- [x] USN validation with regex
-- [x] PHP backend processing
-- [x] MySQL database integration
-- [x] Admin login system
-- [x] Protected dashboard
-- [x] Session management
-- [x] Cookie implementation
-- [x] Prepared SQL statements
-- [x] Password hashing
-- [x] Associative arrays usage
 - [x] Social media links
+- [x] Resume download functionality
+- [x] Mobile-responsive design
+- [x] Accessibility features (ARIA labels)
 
 ## 🤝 Contributing
 
@@ -447,6 +262,6 @@ This project is created for educational purposes as part of a college assignment
 
 ---
 
-**Note:** This portfolio was created to demonstrate proficiency in HTML, CSS, JavaScript, XML/XSLT, PHP, and MySQL as per the course requirements.
+**Note:** This portfolio was created to demonstrate proficiency in HTML, CSS, and JavaScript.
 
 Made with ❤️ and ☕ by Roshan Gowda RM

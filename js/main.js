@@ -72,7 +72,7 @@
         }
         return null;
     }
-
+    
     // ===== Simple Session / Visitor Tracking (Client-side only) =====
     /**
      * Generate a simple random session ID
@@ -251,38 +251,60 @@
             });
         });
     }
-
+    
     // ===== Projects Data (replaces XML/XSLT) =====
     const PROJECTS = [
         {
-            id: 1,
-            title: 'Wonderlust Traveling App',
+            id: 0,
+            title: 'Plant Doctor',
             difficulty: 'advanced',
-            description: 'A comprehensive full-stack travel booking application built with MERN stack, featuring user authentication, real-time booking system, interactive maps, and payment integration.',
-            technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'EJS', 'Mongoose'],
-            image: 'assets/images/project-wonderlust.jpg',
-            link: 'https://github.com/RoshanGowdaR',
-            status: 'Completed'
+            description: 'An AI-powered web application that helps diagnose plant diseases and provides treatment recommendations. Built with modern web technologies and AI integration for accurate plant health analysis.',
+            technologies: ['React', 'TypeScript', 'Vite', 'Gemini AI', 'Tailwind CSS'],
+            image: 'assets/images/project-ai-chatbot.jpg',
+            status: 'Completed',
+            links: {
+                live: 'https://plant-doctor-mauve.vercel.app',
+                repo: 'https://github.com/animelover636294-cyber/Plant_Doctor'
+            }
+        },
+        {
+            id: 1,
+            title: 'Ophelia AI Marketplace',
+            difficulty: 'advanced',
+            description: 'An AI-powered marketplace platform for local artisans. Features AI copilots for product storytelling, marketing content generation, inventory management, and customer support chatbot. Built with React, Supabase, and Google Gemini AI integration.',
+            technologies: ['React', 'TypeScript', 'Vite', 'Supabase', 'Tailwind CSS', 'Gemini AI', 'Edge Functions'],
+            image: 'assets/images/project-ai-chatbot.jpg',
+            status: 'In Production',
+            links: {
+                live: 'https://ophelia-unbound-ai.vercel.app',
+                repo: 'https://github.com/RoshanGowdaR/ophelia-unbound-ai'
+            }
         },
         {
             id: 2,
-            title: 'AI Assistant Chatbot',
+            title: 'Wanderlust Explorer',
             difficulty: 'advanced',
-            description: 'An intelligent conversational AI chatbot powered by natural language processing, featuring context-aware responses, sentiment analysis, and multi-language support with prompt engineering techniques.',
-            technologies: ['Python', 'AI/ML', 'NLP', 'Prompt Engineering', 'API Integration'],
-            image: 'assets/images/project-ai-chatbot.jpg',
-            link: 'https://github.com/RoshanGowdaR',
-            status: 'Completed'
+            description: 'A premium expedition travel platform showcasing exotic destinations and adventure expeditions. Features destination discovery, expedition booking, ship showcase, and user authentication with Google OAuth.',
+            technologies: ['React', 'TypeScript', 'Vite', 'Supabase', 'Tailwind CSS', 'React Router'],
+            image: 'assets/images/project-wonderlust.jpg',
+            status: 'Completed',
+            links: {
+                live: 'https://wanderlust-explorer-voyages.vercel.app',
+                repo: 'https://github.com/RoshanGowdaR/wanderlust-explorer-voyages'
+            }
         },
         {
             id: 3,
-            title: 'Netflix Clone',
+            title: 'AI Assistant Chatbot',
             difficulty: 'advanced',
-            description: 'A responsive Netflix clone with user authentication, video streaming capabilities, personalized recommendations, watchlist management, and dynamic content loading.',
-            technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'MongoDB'],
-            image: 'assets/images/project-netflix.jpg',
-            link: 'https://github.com/RoshanGowdaR',
-            status: 'Completed'
+            description: 'A conversational AI chatbot built with modern web technologies. Features intelligent responses, context awareness, and seamless user experience with real-time messaging capabilities.',
+            technologies: ['React', 'TypeScript', 'Vite', 'Supabase', 'Gemini AI', 'Tailwind CSS'],
+            image: 'assets/images/project-ai-chatbot.jpg',
+            status: 'Completed',
+            links: {
+                live: 'https://ai-assistant-chat-bot-jdbt.vercel.app',
+                repo: 'https://github.com/RoshanGowdaR/Ai-Assistant-Chat-Bot'
+            }
         },
         {
             id: 4,
@@ -291,8 +313,11 @@
             description: 'A music streaming web application inspired by Spotify, featuring playlist creation, music player controls, search functionality, and responsive design.',
             technologies: ['HTML', 'CSS', 'JavaScript', 'Web Audio API'],
             image: 'assets/images/project-spotify.jpg',
-            link: 'https://github.com/RoshanGowdaR',
-            status: 'Completed'
+            status: 'Completed',
+            links: {
+                live: '',
+                repo: 'https://github.com/RoshanGowdaR/Spotify'
+            }
         },
         {
             id: 5,
@@ -301,97 +326,81 @@
             description: 'A real-time weather forecasting application with location-based weather data, 7-day forecast, interactive maps, and weather alerts using external weather APIs.',
             technologies: ['HTML', 'CSS', 'JavaScript', 'REST API', 'Geolocation'],
             image: 'assets/images/project-weather.jpg',
-            link: 'https://github.com/RoshanGowdaR',
-            status: 'Completed'
+            status: 'Completed',
+            links: {
+                live: '',
+                repo: 'https://github.com/RoshanGowdaR'
+            }
         },
         {
             id: 6,
             title: 'Image Compressor',
             difficulty: 'intermediate',
-            description: 'A web-based image compression tool that reduces file sizes while maintaining quality, supporting multiple formats (JPEG, PNG, WebP) with adjustable compression levels.',
-            technologies: ['JavaScript', 'Canvas API', 'HTML', 'CSS'],
+            description: 'React + Vite powered compression studio with dark/light modes, multi-file support (JPG/PNG/PDF/DOCX), granular sliders for quality/size, and instant before-after previews.',
+            technologies: ['React', 'Vite', 'Tailwind CSS', 'Bootstrap', 'browser-image-compression'],
             image: 'assets/images/project-compressor.jpg',
-            link: 'https://github.com/RoshanGowdaR',
-            status: 'Completed'
-        },
-        {
-            id: 7,
-            title: 'PDF Merger',
-            difficulty: 'intermediate',
-            description: 'A web application for merging multiple PDF files into a single document, featuring drag-and-drop interface, page reordering, and preview functionality.',
-            technologies: ['Python', 'PDF Libraries', 'HTML', 'CSS', 'JavaScript'],
-            image: 'assets/images/project-pdf-merger.jpg',
-            link: 'https://github.com/RoshanGowdaR',
-            status: 'Completed'
-        },
-        {
-            id: 8,
-            title: 'Tic-Tac-Toe Game',
-            difficulty: 'beginner',
-            description: 'An interactive tic-tac-toe game with single-player (vs AI) and multiplayer modes, score tracking, and smooth animations built with vanilla JavaScript.',
-            technologies: ['HTML', 'CSS', 'JavaScript'],
-            image: 'assets/images/project-tictactoe.jpg',
-            link: 'https://github.com/RoshanGowdaR',
-            status: 'Completed'
+            status: 'Completed',
+            links: {
+                live: '',
+                repo: 'https://github.com/RoshanGowdaR/Image-Compressor'
+            }
         }
     ];
 
     // ===== Projects Loading (JS only) =====
     function loadProjects() {
         const projectsGrid = document.getElementById('projects-grid');
-        if (!projectsGrid) return;
+        if (!projectsGrid) {
+            console.error('Projects grid element not found!');
+            return;
+        }
 
         // Clear existing content
         projectsGrid.innerHTML = '';
 
-        // Sort by id ascending (like XSLT did)
+        // Sort by id ascending
         const sortedProjects = [...PROJECTS].sort((a, b) => a.id - b.id);
 
         sortedProjects.forEach((project, index) => {
-            const card = document.createElement('div');
+            // Get repo link (prefer repo, fallback to live)
+            const repoLink = project.links?.repo || project.links?.live || '#';
+            
+            // Create card as a link
+            const card = document.createElement('a');
+            card.href = repoLink;
+            card.target = '_blank';
+            card.rel = 'noopener noreferrer';
             card.className = 'project-card';
             card.setAttribute('data-difficulty', project.difficulty);
             card.setAttribute('data-aos', 'fade-up');
             card.setAttribute('data-aos-delay', String(index * 100));
+            
+            // Ensure visibility
+            card.style.textDecoration = 'none';
+            card.style.color = 'inherit';
+            card.style.display = 'block';
+            card.style.opacity = '1';
+            card.style.visibility = 'visible';
+            card.style.background = 'var(--glass-bg)';
 
-            // Build technologies HTML
-            const techHtml = project.technologies
-                .map(tech => `<span class="tech-tag">${tech}</span>`)
-                .join('');
-
-            // Difficulty label text
-            let difficultyLabel = '';
-            if (project.difficulty === 'beginner') {
-                difficultyLabel = '🟢 Beginner';
-            } else if (project.difficulty === 'intermediate') {
-                difficultyLabel = '🟡 Intermediate';
-            } else if (project.difficulty === 'advanced') {
-                difficultyLabel = '🔴 Advanced';
-            }
+            // Get first 2 lines of description (limit to ~150 chars)
+            const shortDescription = project.description.length > 150 
+                ? project.description.substring(0, 150) + '...'
+                : project.description;
 
             card.innerHTML = `
-                <img class="project-image" src="${project.image}" alt="Screenshot of ${project.title}">
                 <div class="project-content">
-                    <span class="project-difficulty">${difficultyLabel}</span>
                     <h3 class="project-title">${project.title}</h3>
-                    <p class="project-description">${project.description}</p>
-                    <div class="project-tech">
-                        ${techHtml}
-                    </div>
-                    <a class="project-link" href="${project.link}" target="_blank" rel="noopener noreferrer" aria-label="View ${project.title} project on GitHub">
-                        View Project <i class="fas fa-external-link-alt"></i>
-                    </a>
+                    <p class="project-description">${shortDescription}</p>
                 </div>
             `;
 
             projectsGrid.appendChild(card);
+            console.log('Added project card:', project.title);
         });
-
-        // Re-initialize project card tilt effect
-        if (window.reinitProjectTilt) {
-            window.reinitProjectTilt();
-        }
-
+        
+        console.log('Total projects loaded:', projectsGrid.children.length);
+        
         // Initialize project filtering
         initProjectsFilter();
     }
@@ -474,5 +483,14 @@
     } else {
         init();
     }
+    
+    // Also try loading projects after a short delay as a fallback
+    setTimeout(() => {
+        const projectsGrid = document.getElementById('projects-grid');
+        if (projectsGrid && projectsGrid.children.length === 0) {
+            console.log('Projects grid is empty, reloading...');
+            loadProjects();
+        }
+    }, 1000);
     
 })();

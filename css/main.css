@@ -6,7 +6,7 @@
 /* ===== CSS Variables ===== */
 :root {
     /* Dark Theme Colors */
-    --primary-bg: #0a192f;
+    --primary-bg: #0a0e1a;
     --secondary-bg: #112240;
     --tertiary-bg: #1e3a5f;
     --accent-color: #64ffda;
@@ -17,8 +17,8 @@
     --highlight: #64ffda;
     
     /* Glass Effect */
-    --glass-bg: rgba(17, 34, 64, 0.6);
-    --glass-border: rgba(100, 255, 218, 0.1);
+    --glass-bg: rgba(17, 34, 64, 0.85);
+    --glass-border: rgba(100, 255, 218, 0.2);
     
     /* Spacing */
     --section-padding: 100px 0;
@@ -51,6 +51,7 @@ body.light-theme {
     --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
     --glow-primary: 0 0 20px rgba(8, 145, 178, 0.2);
+    background: linear-gradient(180deg, #f0f4f8 0%, #e2e8f0 100%) !important;
 }
 
 /* ===== Reset & Base Styles ===== */
@@ -118,15 +119,15 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 50% 50%, rgba(100, 255, 218, 0.05) 0%, transparent 50%);
+    background: transparent;
 }
 
 .parallax-layer:nth-child(2) {
-    background: radial-gradient(circle at 80% 20%, rgba(100, 255, 218, 0.03) 0%, transparent 40%);
+    background: transparent;
 }
 
 .parallax-layer:nth-child(3) {
-    background: radial-gradient(circle at 20% 80%, rgba(100, 255, 218, 0.02) 0%, transparent 30%);
+    background: transparent;
 }
 
 /* ===== Floating Particles ===== */
@@ -142,19 +143,12 @@ body {
 
 .particle {
     position: absolute;
-    width: 4px;
-    height: 4px;
+    width: 2px;
+    height: 2px;
     background: var(--accent-color);
     border-radius: 50%;
-    opacity: 0.3;
-    animation: float 20s infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0) translateX(0); }
-    25% { transform: translateY(-100px) translateX(50px); }
-    50% { transform: translateY(-200px) translateX(-50px); }
-    75% { transform: translateY(-100px) translateX(100px); }
+    opacity: 0.4;
+    box-shadow: 0 0 2px var(--accent-color);
 }
 
 /* ===== Navigation ===== */
@@ -478,16 +472,20 @@ body {
     position: relative;
     width: 300px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 50%;
     overflow: hidden;
+    border: 3px solid var(--glass-border);
+    box-shadow: var(--shadow-lg);
 }
 
 .profile-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     filter: grayscale(30%);
     transition: var(--transition-smooth);
+    border-radius: 50%;
 }
 
 .image-wrapper:hover .profile-img {
@@ -664,27 +662,116 @@ body {
     transition: var(--transition-smooth);
     cursor: pointer;
     transform-style: preserve-3d;
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    min-height: 200px;
 }
 
 .project-card:hover {
-    transform: translateY(-10px) rotateX(5deg);
+    transform: translateY(-10px);
     border-color: var(--accent-color);
-    box-shadow: var(--glow-primary);
+    box-shadow: var(--glow-primary), var(--shadow-lg);
+}
+
+.project-card-image {
+    position: relative;
 }
 
 .project-image {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
-    transition: var(--transition-smooth);
+    transition: transform 0.5s ease;
+    display: block;
 }
 
 .project-card:hover .project-image {
-    transform: scale(1.05);
+    transform: scale(1.08);
+}
+
+.project-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 25, 47, 0.95);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+body.light-theme .project-card-overlay {
+    background: rgba(240, 244, 248, 0.95);
+}
+
+.project-card:hover .project-card-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-card-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: 8px;
+    border: 2px solid var(--accent-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: var(--primary-bg);
+    background: var(--accent-color);
+    transition: var(--transition-fast);
+    min-width: 100px;
+    justify-content: center;
+}
+
+.project-card-btn.secondary {
+    background: transparent;
+    color: var(--accent-color);
+}
+
+body.light-theme .project-card-btn {
+    color: var(--text-heading);
+}
+
+body.light-theme .project-card-btn.secondary {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.project-card-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--glow-primary);
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+.project-card-btn.secondary:hover {
+    background: rgba(100, 255, 218, 0.1);
+    color: var(--accent-hover);
+    border-color: var(--accent-hover);
 }
 
 .project-content {
-    padding: 1.5rem;
+    padding: 2rem;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-difficulty {
@@ -706,8 +793,14 @@ body {
 
 .project-description {
     color: var(--text-secondary);
+    font-size: 0.95rem;
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .project-tech {
@@ -725,19 +818,6 @@ body {
     font-size: 0.8rem;
 }
 
-.project-link {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: var(--transition-fast);
-}
-
-.project-link:hover {
-    gap: 0.75rem;
-}
 
 /* ===== Glass Card ===== */
 .glass-card {
@@ -753,6 +833,19 @@ body {
     transform: translateY(-5px);
     border-color: var(--accent-color);
     box-shadow: var(--glow-primary);
+}
+
+/* ===== Certification Card as Link ===== */
+a.certification-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+a.certification-card:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* ===== Achievements Section ===== */
@@ -839,6 +932,21 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.certification-download {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    transition: var(--transition-fast);
+}
+
+.certification-card:hover .certification-download {
+    color: var(--accent-hover);
+    transform: translateX(3px);
 }
 
 /* ===== Contact Section ===== */

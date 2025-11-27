@@ -81,7 +81,8 @@
     function createParticles() {
         if (!particlesContainer) return;
         
-        const particleCount = window.innerWidth < 768 ? 20 : 50;
+        // Moderate density for starry effect
+        const particleCount = window.innerWidth < 768 ? 80 : 150;
         
         for (let i = 0; i < particleCount; i++) {
             const particle = document.createElement('div');
@@ -91,14 +92,12 @@
             particle.style.left = Math.random() * 100 + '%';
             particle.style.top = Math.random() * 100 + '%';
             
-            // Random animation delay
-            particle.style.animationDelay = Math.random() * 20 + 's';
-            particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+            // Uniform size - tiny dots
+            particle.style.width = '2px';
+            particle.style.height = '2px';
             
-            // Random size
-            const size = 2 + Math.random() * 4;
-            particle.style.width = size + 'px';
-            particle.style.height = size + 'px';
+            // Consistent opacity with slight variation for depth
+            particle.style.opacity = 0.3 + Math.random() * 0.2;
             
             particlesContainer.appendChild(particle);
         }
