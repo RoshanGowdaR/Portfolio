@@ -103,6 +103,26 @@
         
         return true;
     }
+
+    /**
+     * Validate the entire form
+     * @param {HTMLFormElement} form - The form to validate
+     * @returns {boolean} - Whether the entire form is valid
+     */
+    function validateForm(form) {
+        let isValid = true;
+        const fields = form.querySelectorAll('input, textarea');
+        
+        fields.forEach(field => {
+            // validateField returns true if valid, false if invalid
+            // We flip it: if validateField returns false, we set isValid to false
+            if (!validateField(field)) {
+                isValid = false;
+            }
+        });
+        
+        return isValid;
+    }
     
     /**
      * Show error message for a field
