@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roshan Gowda RM - AI Engineer & Full Stack Developer Portfolio. Explore my projects, skills, and achievements in web development, AI, and cloud computing.">
+    <meta name="keywords" content="Roshan Gowda, AI Engineer, Full Stack Developer, Web Development, Portfolio">
+    <meta name="author" content="Roshan Gowda RM">
+    
+    <title>Roshan Gowda RM | AI Engineer & Full Stack Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="logo">RG<span class="logo-dot">.</span></a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Parallax Background Layers -->
+    <div class="parallax-container" id="parallax-container">
+        <div class="parallax-layer" data-speed="0.3"></div>
+        <div class="parallax-layer" data-speed="0.5"></div>
+        <div class="parallax-layer" data-speed="0.7"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section" role="banner">
+            <div class="container hero-container">
+                <div class="hero-content" data-aos="fade-right">
+                    <p class="hero-greeting">Hi there, I'm</p>
+                    <h1 class="hero-title">
+                        Roshan Gowda <span class="highlight">RM</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typing-text">AI Engineer & Full Stack Developer</span>
+                    </h2>
+                    <p class="hero-description">
+                        BE student at MCE, passionate about building intelligent web applications 
+                        and exploring the frontiers of artificial intelligence and cloud computing.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="resume.pdf" class="btn btn-secondary" download="Roshan_Gowda_Resume.pdf">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="fade-left">
+                    <div class="card-3d" id="card-3d">
+                        <div class="card-3d-inner">
+                            <div class="card-3d-front">
+                                <div class="code-snippet">
+                                    <div class="code-header">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                    </div>
+                                    <pre class="code-content"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Roshan Gowda RM"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"AI Engineer"</span>,
+  <span class="code-property">skills</span>: [
+    <span class="code-string">"Full Stack"</span>,
+    <span class="code-string">"Cloud Computing"</span>,
+    <span class="code-string">"AI/ML"</span>
+  ],
+  <span class="code-property">passion</span>: <span class="code-string">"Building the future"</span>
+};</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">01.</span> About Me
+                </h2>
+                
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <p class="about-description">
+                            I'm a passionate developer and problem solver who loves turning ideas into clean and functional digital experiences. I enjoy exploring new technologies, understanding how things work, and constantly improving myself with every project I build.
+                        </p>
+                        <p class="about-description">
+                            As an AI enthusiast and quick learner, I adapt fast, pick up new skills with ease, and enjoy experimenting with emerging tools that push the boundaries of what's possible.
+                        </p>
+                        <p class="about-description">
+                            When I'm not coding, you'll find me learning something new, listening to music, or watching anime — all of which inspire my creativity and help me think in unique ways.
+                        </p>
+                        <p class="about-description">
+                            I believe in continuous learning, building meaningful solutions, and growing one step at a time.
+                        </p>
+                    </div>
+                    
+                    <div class="about-image" data-aos="fade-left">
+                        <div class="image-wrapper">
+                            <img src="assets/images/profile.jpg" alt="Roshan Gowda RM - AI Engineer and Full Stack Developer" class="profile-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">02.</span> Skills & Technologies
+                </h2>
+                
+                <!-- Skill Filter -->
+                <div class="skill-filter" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="database">Database</button>
+                    <button class="filter-btn" data-filter="devops">DevOps</button>
+                    <button class="filter-btn" data-filter="ai">AI/ML</button>
+                    <button class="filter-btn" data-filter="other">Other</button>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Frontend Skills -->
+                    <div class="skill-card" data-category="frontend" data-aos="fade-up">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3 class="skill-name">HTML</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="frontend" data-aos="fade-up" data-aos-delay="50">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3 class="skill-name">CSS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="frontend" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    
+                    <!-- Backend Skills -->
+                    <div class="skill-card" data-category="backend" data-aos="fade-up" data-aos-delay="150">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3 class="skill-name">Node.js</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="backend" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="skill-name">Express.js</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="backend" data-aos="fade-up" data-aos-delay="250">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3 class="skill-name">Python</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="backend" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3 class="skill-name">Java</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    
+                    <!-- Database Skills -->
+                    <div class="skill-card" data-category="database" data-aos="fade-up" data-aos-delay="350">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="skill-name">MongoDB</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="83"></div>
+                        </div>
+                        <span class="skill-percentage">83%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="skill-name">Mongoose</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    
+                    <!-- DevOps Skills -->
+                    <div class="skill-card" data-category="devops" data-aos="fade-up" data-aos-delay="450">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3 class="skill-name">Git</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="devops" data-aos="fade-up" data-aos-delay="500">
+                        <div class="skill-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3 class="skill-name">GitHub</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="87"></div>
+                        </div>
+                        <span class="skill-percentage">87%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="devops" data-aos="fade-up" data-aos-delay="550">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="skill-name">Vercel</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="devops" data-aos="fade-up" data-aos-delay="600">
+                        <div class="skill-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h3 class="skill-name">AWS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="72"></div>
+                        </div>
+                        <span class="skill-percentage">72%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="devops" data-aos="fade-up" data-aos-delay="650">
+                        <div class="skill-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <h3 class="skill-name">Docker</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="70"></div>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    
+                    <!-- AI/ML Skills -->
+                    <div class="skill-card" data-category="ai" data-aos="fade-up" data-aos-delay="700">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="skill-name">AI Engineering</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="78"></div>
+                        </div>
+                        <span class="skill-percentage">78%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="ai" data-aos="fade-up" data-aos-delay="750">
+                        <div class="skill-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="skill-name">Prompt Engineering</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="82"></div>
+                        </div>
+                        <span class="skill-percentage">82%</span>
+                    </div>
+                    
+                    <!-- Other Skills -->
+                    <div class="skill-card" data-category="other" data-aos="fade-up" data-aos-delay="800">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-name">DSA</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="60"></div>
+                        </div>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="other" data-aos="fade-up" data-aos-delay="850">
+                        <div class="skill-icon">
+                            <i class="fas fa-object-group"></i>
+                        </div>
+                        <h3 class="skill-name">OOP</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="other" data-aos="fade-up" data-aos-delay="900">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="skill-name">Power BI</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    
+                    <div class="skill-card" data-category="frontend" data-aos="fade-up" data-aos-delay="950">
+                        <div class="skill-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3 class="skill-name">EJS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    
+                    <div class="skill-card skill-in-progress" data-category="frontend" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3 class="skill-name">React</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress-shimmer"></div>
+                        </div>
+                        <span class="skill-percentage in-progress-badge">In Progress</span>
+                    </div>
+                    
+                    <div class="skill-card skill-in-progress" data-category="frontend" data-aos="fade-up" data-aos-delay="1050">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-name">TypeScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress-shimmer"></div>
+                        </div>
+                        <span class="skill-percentage in-progress-badge">In Progress</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">03.</span> Education
+                </h2>
+                
+                <div class="education-table-wrapper" data-aos="fade-up">
+                    <table class="education-table" role="table" aria-label="Educational qualifications">
+                        <thead>
+                            <tr>
+                                <th scope="col">Institution</th>
+                                <th scope="col">Degree / Course</th>
+                                <th scope="col">Year</th>
+                                <th scope="col">Grade / Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Institution">Malnad College of Engineering, Hassan (MCE)</td>
+                                <td data-label="Degree / Course">Bachelor of Engineering (BE) - Currently Pursuing</td>
+                                <td data-label="Year">2021 - 2025</td>
+                                <td data-label="Grade / Percentage">8.5 CGPA</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Institution">SMT Govt LV Polytechnic, Hassan</td>
+                                <td data-label="Degree / Course">Diploma</td>
+                                <td data-label="Year">2019 - 2021</td>
+                                <td data-label="Grade / Percentage">85%</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Institution">SLV English Medium School</td>
+                                <td data-label="Degree / Course">SSLC</td>
+                                <td data-label="Year">2018 - 2019</td>
+                                <td data-label="Grade / Percentage">90%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">04.</span> Featured Projects
+                </h2>
+                
+                <!-- Project Filter -->
+                <div class="project-filter" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="beginner">Beginner</button>
+                    <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                    <button class="filter-btn" data-filter="advanced">Advanced</button>
+                </div>
+                
+                <!-- Projects will be loaded from XML via XSLT transformation -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">05.</span> Achievements
+                </h2>
+                
+                <div class="coming-soon-wrapper" data-aos="fade-up">
+                    <div class="coming-soon-card glass-card">
+                        <div class="coming-soon-icon">
+                            <i class="fas fa-hourglass-half"></i>
+                        </div>
+                        <h3 class="coming-soon-title">Coming Soon...</h3>
+                        <p class="coming-soon-description">
+                            Exciting achievements are on the way! Stay tuned for updates on my latest accomplishments and milestones.
+                        </p>
+                        <div class="coming-soon-decoration">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">06.</span> Certifications
+                </h2>
+                
+                <div class="certifications-grid">
+                    <div class="certification-card glass-card" data-aos="fade-up">
+                        <div class="certification-header">
+                            <div class="certification-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <div class="certification-meta">
+                                <h3 class="certification-title">AWS Cloud Practitioner</h3>
+                                <p class="certification-issuer">Amazon Web Services</p>
+                            </div>
+                        </div>
+                        <p class="certification-description">
+                            Foundational understanding of AWS Cloud concepts, services, and terminology.
+                        </p>
+                        <div class="certification-footer">
+                            <span class="certification-date">
+                                <i class="fas fa-calendar"></i> 2024
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="certification-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="certification-header">
+                            <div class="certification-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="certification-meta">
+                                <h3 class="certification-title">AI & Machine Learning</h3>
+                                <p class="certification-issuer">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="certification-description">
+                            Comprehensive course covering AI fundamentals, ML algorithms, and practical applications.
+                        </p>
+                        <div class="certification-footer">
+                            <span class="certification-date">
+                                <i class="fas fa-calendar"></i> 2024
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="certification-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="certification-header">
+                            <div class="certification-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="certification-meta">
+                                <h3 class="certification-title">Full Stack Web Development</h3>
+                                <p class="certification-issuer">Udemy</p>
+                            </div>
+                        </div>
+                        <p class="certification-description">
+                            Complete MERN stack development course covering MongoDB, Express, React, and Node.js.
+                        </p>
+                        <div class="certification-footer">
+                            <span class="certification-date">
+                                <i class="fas fa-calendar"></i> 2023
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="certification-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="certification-header">
+                            <div class="certification-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <div class="certification-meta">
+                                <h3 class="certification-title">Docker & Kubernetes</h3>
+                                <p class="certification-issuer">Udemy</p>
+                            </div>
+                        </div>
+                        <p class="certification-description">
+                            Container orchestration and deployment using Docker and Kubernetes technologies.
+                        </p>
+                        <div class="certification-footer">
+                            <span class="certification-date">
+                                <i class="fas fa-calendar"></i> 2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">
+                    <span class="title-number">07.</span> Get In Touch
+                </h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <p class="contact-tagline">
+                            I'm always interested in hearing about new projects and opportunities. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:gowdaroshan49@gmail.com">gowdaroshan49@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+916362943649">+91 63629 43649</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Hassan, Karnataka, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form glass-card" data-aos="fade-left" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required aria-required="true" placeholder="Your Name">
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-required="true" placeholder="your.email@example.com">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="usn">USN (University Seat Number)</label>
+                            <input type="text" id="usn" name="usn" placeholder="e.g., 1RV21CS001" aria-describedby="usn-help">
+                            <small id="usn-help" class="form-help">Optional: Format like 1RV21CS001</small>
+                            <span class="error-message" id="usn-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required aria-required="true" placeholder="What's this about?">
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Your message here..."></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        
+                        <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://github.com/RoshanGowdaR" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/roshan-gowda-rm-7222a537b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/its_roshan_gowda" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                
+                <p class="footer-text">
+                    Designed & Built by <span class="highlight">Roshan Gowda RM</span>
+                </p>
+                
+                <p class="footer-copyright">
+                    &copy; 2024 Roshan Gowda. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/parallax.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
