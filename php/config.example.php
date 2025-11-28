@@ -1,20 +1,4 @@
 <?php
-/**
- * Database Configuration Template
- * 
- * INSTRUCTIONS:
- * 1. Copy this file to 'config.php' in the same directory
- * 2. Update the values below with your actual database credentials
- * 3. NEVER commit config.php to your repository
- * 
- * For XAMPP/MAMP/Laragon default settings:
- * - DB_HOST: localhost
- * - DB_USER: root
- * - DB_PASS: (empty for XAMPP, 'root' for MAMP)
- * - DB_NAME: portfolio_db
- */
-
-// Database configuration
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');  // Leave empty for XAMPP, use 'root' for MAMP
